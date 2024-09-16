@@ -3,22 +3,58 @@ import { initPrintOut, printOut, newLine } from "../../common/script/utils.mjs";
 initPrintOut(document.getElementById("txtOut"));
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+/* 2 + 3 * 2 - 4 * 6
+*/
+const numbers = 2 + 3 * (2 - 4) * 6
+
+printOut(numbers.toString());
 printOut(newLine);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+const meter = 25 
+const cm = 34 
+const totalCm = (meter * 100) + cm 
+const totalMm = totalCm* 10 
+const mmToInches = 25.4 
+const TotalInches = (totalMm / mmToInches).toFixed(2); 
+
+printOut(TotalInches.toString());
 printOut(newLine);
 
 printOut("--- Part 3 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
+const day = 3
+const hour = 12 
+const min = 14 
+const sec = 45 
+
+const DayMin = (day * 24 * 60);
+const HourMin = (hour * 60);
+const SecMin = (sec / 60);
+
+const TotalTime = (DayMin + HourMin + min + SecMin);
+
+
+printOut(TotalTime.toString());
+
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
+/* Put your code below here!*/ 
+const number = 6.322.52 
+
+const NumbertoDay = (number / 24)
+const NumberToHour = (NumbertoDay / 60)
+const NumberToMin = () 
+
+const NumbertoHour = (number * 60)
+const NumbertoMin = (number / 60)
+const NumberToSec = (number/ 60)
+
+
+
+
 printOut("Replace this with you answer!");
 printOut(newLine);
 
