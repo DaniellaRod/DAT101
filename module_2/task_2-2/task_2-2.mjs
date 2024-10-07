@@ -42,11 +42,11 @@ printOut(TotalTime.toString());
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/ 
-const number = 6.322.52 
+const number = 632252; 
 
 const NumbertoDay = (number / 24)
 const NumberToHour = (NumbertoDay / 60)
-const NumberToMin = () 
+
 
 const NumbertoHour = (number * 60)
 const NumbertoMin = (number / 60)
@@ -54,37 +54,85 @@ const NumberToSec = (number/ 60)
 
 
 
-
-printOut("Replace this with you answer!");
 printOut(newLine);
 
 printOut("--- Part 5 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
+const usdToNokRate = 76 / 8.6;  
+const nokToUsdRate = 8.6 / 76;  
+
+let usdAmount = 54;
+let nokConverted = Math.round(usdAmount * usdToNokRate);  
+
+
+let nokAmount = nokConverted;  
+let usdConverted = Math.round(nokAmount * nokToUsdRate);  
+
+printOut(usdAmount + " USD is approximately " + nokConverted + " NOK.");
+printOut(nokAmount + " NOK is approximately " + usdConverted + " USD.");
+
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+/*"There is much between heaven and earth that we do not understand."*/
+const Tekst = ("There is much between heaven and earth that we do not understand."); 
+
+printOut(Tekst.length + ""); 
+printOut(Tekst[19]); 
+printOut(Tekst[35]+Tekst[36]+Tekst[37]+Tekst[38]+Tekst[39]+Tekst[40]+Tekst[41]+Tekst[42]+Tekst[43]+Tekst[44]+Tekst[45]+Tekst[46]);   
+printOut(Tekst.indexOf("earth") + "is the index of earth starts in the text" ); 
 printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+printOut(Boolean(5 > 3) + " "); 
+printOut(Boolean(7 >= 7) + " "); 
+printOut(Boolean("a" > "b") + " "); 
+printOut(Boolean("1" < "a") + " ");
+printOut(Boolean("2500" < "abcd") + " "); 
+printOut(Boolean("arne" !== "thomas") + " "); 
+printOut(Boolean(2 == 5) + " "); 
+printOut(Boolean("abcd" > "bcd") + " "); 
+
+
+
 printOut(newLine);
 
 printOut("--- Part 8 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+const number1 = Number("254");
+printOut(number1 + " "); 
+
+const number2 = Number("57.23");
+printOut(number2 + " "); 
+
+
+const number3 = parseInt("25 kroner", 10);
+printOut(number3 + " "); 
+
+
+
 printOut(newLine);
 
 printOut("--- Part 9 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+const r = Math.floor(Math.random() * 360) + 1;
+printOut(r + " "); 
+
+
 printOut(newLine);
 
 /* Task 10*/
 printOut("--- Part 10 ---------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const totalDays = 131;
+
+const weeks = Math.floor(totalDays / 7);
+
+const days = totalDays % 7;
+
+printOut(`Weeks: ${weeks}, Days: ${days}` + " ");
+
 printOut(newLine);

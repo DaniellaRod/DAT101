@@ -8,37 +8,38 @@
     <h2><label for="txtOut">Output from Task 2.2:</label></h2>
     <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
       <span id="txtOut" style="white-space: nowrap"></span>
+      <ol>
+        <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
+        <p>
+          [A constant is a value that does not change throughout the program. It is used when a value remains fixed, providing stability and clarity. In contrast, a variable is used to store data that may change during program execution. This allows the program to adapt to user inputs, external data, or internal changes over time. While constants are useful for maintaining fixed values, not everything can or should be a constant. Programs often require variables to handle dynamic data and changing states, as trying to make everything a constant would limit the program's functionality and flexibility.]
+        </p>
+        <li>How do parentheses affect the arithmetic outcome of an expression?</li>
+        <p>
+          [Parentheses play a crucial role in determining the outcome of an arithmetic expression by controlling the order of operations. They ensure that certain calculations are performed first, which can significantly affect the final result of the expression.]
+        </p>
+        <li>How do we limit floating-point numbers to a given number of decimals?</li>
+        <p>
+          [In JavaScript, you can limit a floating-point number to a specific number of decimal places using the `toFixed()` method. This method rounds the number to the desired number of decimal places and returns it as a string, allowing for a clearer presentation of numerical values.]
+        </p>
+        <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
+        <p>
+          [Comparing two floating-point values for equality in JavaScript can be challenging due to precision issues in their binary representation. For instance, numbers like “12.199999” and “12.2” may appear equal but could differ slightly in memory due to rounding errors. ]
+        </p>
+        <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
+        <p>
+          [Comparison operators in JavaScript return boolean values: “true” or “false”. You can evaluate the result of these comparisons using conditional statements like “if” or by logging the output to the console, which helps in determining the flow of the program.]
+        </p>
+        <li>How does the Math.random() function work, and what can it be used for?</li>
+        <p>
+          [The `Math.random()` function generates a random floating-point number between “0” (inclusive) and “1” (exclusive). It is commonly used for various purposes, such as generating random values, simulating random events, or selecting random items from a list.]
+        </p>
+        <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
+        <p>
+          [The modulus operator “%” is used to find the remainder of a division operation. It is useful for various mathematical operations, such as checking if numbers are even or odd, cycling through values, keeping numbers within a specific range, and distributing resources evenly.]
+        </p>
+      </ol>
+      <script type="module" src="./task_2-2.mjs" defer></script>
     </div>
-    <ol>
-      <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
-      <p>
-				[Replace this with you answer]
-			</p>
-      <li>How do parentheses affect the arithmetic outcome of an expression?</li>
-      <p>
-				[Replace this with you answer]
-			</p>
-      <li>How do we limit floating-point numbers to a given number of decimals?</li>
-      <p>
-				[Replace this with you answer]
-			</p>
-      <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
-      <p>
-				[Replace this with you answer]
-			</p>
-      <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
-      <p>
-				[Replace this with you answer]
-			</p>
-      <li>How does the Math.random() function work, and what can it be used for?</li>
-      <p>
-				[Replace this with you answer]
-			</p>
-      <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
-      <p>
-				[Replace this with you answer]
-			</p>
-    </ol>
-		<script type="module" src="./task_2-2.mjs" defer></script>
+    
   </body>
 </html>
