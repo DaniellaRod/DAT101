@@ -1,7 +1,7 @@
 "use strict";
 import libSprite from "../../common/libs/libSprite.mjs";
 import lib2d from "../../common/libs/lib2d.mjs";
-import { GameProps, } from "./FlappyBird.mjs";
+import { GameProps } from "./FlappyBird.mjs";
 
 class TObstacle {
   #upper;
@@ -22,7 +22,6 @@ class TObstacle {
     pos.y = top;
     this.#lower = new libSprite.TSprite(aSpriteCanvas, aSpriteInfo, pos);
     this.#lower.index = 2;
-  
     this.hasPassed = false;
   }
 
@@ -42,11 +41,6 @@ class TObstacle {
       GameProps.hero.flap();
       GameProps.hero.isDead = true;
     }
-  }
-
-  updateIndex(upperIndex, lowerIndex) {
-    this.#upper.index = upperIndex;
-    this.#lower.index = lowerIndex;
   }
 
   get right(){

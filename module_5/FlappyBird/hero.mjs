@@ -1,7 +1,7 @@
 "use strict";
 import lib2d from "../../common/libs/lib2d.mjs";
 import libSprite from "../../common/libs/libSprite.mjs";
-import { GameProps, EGameStatus, stopResetSound, playSound } from "./FlappyBird.mjs";
+import { GameProps, EGameStatus } from "./FlappyBird.mjs";
 
 class THero extends libSprite.TSprite {
   #spi;
@@ -33,13 +33,10 @@ class THero extends libSprite.TSprite {
       this.rotation = this.#velocity* 10;
       this.#velocity += this.#gravity;
     } else {
-      stopResetSound(GameProps.sounds.gameOver);
-      playSound(GameProps.sounds.gameOver);
       this.posY = groundY - this.#spi.height;
       GameProps.status = EGameStatus.gameOver;
       this.animateSpeed = 0;
-      stopResetSound(GameProps.sounds.running);
-      
+      GameProps.sounds.running.stop();
     }
   }
 
